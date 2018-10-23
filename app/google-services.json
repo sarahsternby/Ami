@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "932899958191",
+    "firebase_url": "https://amifirebase-dfd98.firebaseio.com",
+    "project_id": "amifirebase-dfd98",
+    "storage_bucket": "amifirebase-dfd98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932899958191:android:ce4b7f7bc068d8bb",
+        "android_client_info": {
+          "package_name": "com.ami.android.ami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932899958191-u6jnr71inlr4gr0remfma2qlr5i7cu3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOg9i4r1z1WKAMUPeDxd9uJXPfo6JvPXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
