@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import android.content.Intent;
+
+import com.ami.android.ami.Common.Common;
 import com.ami.android.ami.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -53,7 +55,8 @@ public class LogIn extends AppCompatActivity {
                                 if (dataSnapshot.child(username.getText().toString()).exists()) { // if user exists in database
                                     User user = dataSnapshot.child(username.getText().toString()).getValue(User.class);
                                     if (user.getPassword().equals((password.getText().toString()))) { // if correct password
-                                        makeText(LogIn.this, "Success!", Toast.LENGTH_SHORT).show();
+                                        makeText(LogIn.this, "Welcome, " + user.getName(), Toast.LENGTH_SHORT).show();
+                                        Common.currentUser = user;
                                         Intent main = new Intent(LogIn.this, MainMenu.class);
                                         startActivity(main);
                                         finish(); // this prevents users from using the Android back button to return to login

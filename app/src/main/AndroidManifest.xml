@@ -21,7 +21,8 @@
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
